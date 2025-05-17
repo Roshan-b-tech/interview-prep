@@ -7,6 +7,10 @@ const nextConfig = {
     typescript: {
         // Ignore TypeScript errors during build
         ignoreBuildErrors: true,
+    },
+    experimental: {
+        // Ensure server-only modules don't get bundled for the client
+        serverComponentsExternalPackages: ['firebase-admin']
     }
 }
 
